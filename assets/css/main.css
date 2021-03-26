@@ -129,12 +129,12 @@ body {
     cursor: pointer; }
     .header__contact:not(:last-of-type) {
       margin-right: 60px; }
-    .header__contact:hover .header__icon-round {
-      -webkit-transition: .3s;
-      -o-transition: .3s;
-      transition: .3s;
-      -webkit-box-shadow: 0px 0px 5px 0px #222;
-              box-shadow: 0px 0px 5px 0px #222; }
+    .header__contact i {
+      -webkit-transition: .5s;
+      -o-transition: .5s;
+      transition: .5s; }
+    .header__contact:hover i {
+      font-size: 32px; }
   .header__address-title {
     font-weight: 700;
     line-height: 22px; }
@@ -158,7 +158,10 @@ body {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-right: 20px; }
+    margin-right: 20px;
+    -webkit-transition: .3s ease;
+    -o-transition: .3s ease;
+    transition: .3s ease; }
 
 .nav {
   display: -webkit-box;
@@ -1650,7 +1653,12 @@ body {
   .f-menu__item:not(:last-of-type) {
     margin-bottom: 25px; }
   .f-menu .link {
-    display: inline-block; }
+    display: inline-block;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s; }
+    .f-menu .link:hover {
+      text-decoration: underline; }
   .f-menu .accordion__triangle {
     margin-right: 20px; }
 
