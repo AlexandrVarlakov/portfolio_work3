@@ -526,6 +526,14 @@ body {
     @media (max-width: 360px) {
       .services__item {
         min-width: 100%; } }
+    .services__item img {
+      -webkit-transition: .6s;
+      -o-transition: .6s;
+      transition: .6s; }
+    .services__item:hover img {
+      -webkit-transform: scaleX(1.1) scaleY(1.1);
+          -ms-transform: scaleX(1.1) scaleY(1.1);
+              transform: scaleX(1.1) scaleY(1.1); }
     .services__item_1 {
       background-color: #43b1d2; }
     .services__item_2 {
@@ -851,6 +859,17 @@ body {
         -webkit-flex-basis: 100%;
             -ms-flex-preferred-size: 100%;
                 flex-basis: 100%; } }
+    .features__item img {
+      -webkit-transition: .6s;
+      -o-transition: .6s;
+      transition: .6s; }
+    .features__item:hover img {
+      -webkit-transition: .6s;
+      -o-transition: .6s;
+      transition: .6s;
+      -webkit-transform: scaleX(1.1) scaleY(1.1);
+          -ms-transform: scaleX(1.1) scaleY(1.1);
+              transform: scaleX(1.1) scaleY(1.1); }
   .features__label {
     margin-bottom: 46px;
     height: 80px;
@@ -1192,6 +1211,16 @@ body {
     @media (max-width: 780px) {
       .gallery__list {
         display: none; } }
+  .gallery__img-box {
+    -webkit-transition: .5s ease;
+    -o-transition: .5s ease;
+    transition: .5s ease; }
+    .gallery__img-box:hover {
+      -webkit-transform: scale(1.05);
+          -ms-transform: scale(1.05);
+              transform: scale(1.05);
+      -webkit-box-shadow: 0 0 10px 1px #292929;
+              box-shadow: 0 0 10px 1px #292929; }
 
 .carousel {
   width: 100%;
@@ -1327,6 +1356,7 @@ body {
         min-width: 100%;
         margin-bottom: 50px; } }
   .carousel-c__slide {
+    position: relative;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -1342,13 +1372,24 @@ body {
             align-items: center;
     -webkit-flex-basis: 25%;
         -ms-flex-preferred-size: 25%;
-            flex-basis: 25%; }
+            flex-basis: 25%;
+    padding: 15px 0; }
     @media (max-width: 1250px) {
       .carousel-c__slide {
         min-width: 50%; } }
     @media (max-width: 670px) {
       .carousel-c__slide {
         min-width: 100%; } }
+    .carousel-c__slide img {
+      -webkit-transition: .5s;
+      -o-transition: .5s;
+      transition: .5s; }
+    .carousel-c__slide:hover img {
+      -webkit-transform: scale(1.05);
+          -ms-transform: scale(1.05);
+              transform: scale(1.05);
+      -webkit-filter: drop-shadow(0 0 5px #292929);
+              filter: drop-shadow(0 0 5px #292929); }
   .carousel-c__avatar {
     margin-bottom: 30px; }
   .carousel-c__name {
